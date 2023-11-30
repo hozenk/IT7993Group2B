@@ -76,3 +76,64 @@ a.ex2:hover, a.ex2:active{
 	font-size: 150%;
 	color: black; 
 }
+.form-container {
+    display: flex;
+    max-width: 800px;
+    margin: auto;
+  }
+
+  .form-column {
+    flex: 1;
+    padding: 10px;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+  }
+
+  .citation-column {
+    flex: 1;
+    padding: 25px;
+    margin-top: 70px;
+  }
+
+  textarea {
+    height: 150px;
+  }
+
+  .button-column {
+    flex-shrink: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  .subContainer {
+    display: flex;
+    flex-direction: column;
+  }

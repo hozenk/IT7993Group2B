@@ -1,0 +1,79 @@
+/* You can add global styles to this file, and also import other style files */
+h1{
+	font-family: Helvetica, sans-serif;
+	font-size: 40px;
+	color: white;
+}
+h2{
+	font-size: 20px;
+	font-family: Helvetica, sans-serif;
+	font-weight: bold;
+	text-align: center;
+	background: gold;
+}
+h3{
+    width: 65%;
+	font-size: 25px;
+	font-family: Helvetica, sans-serif;
+	font-weight: bold;
+	text-align: center;
+	color: rgb(0, 0, 0);
+}
+p{
+	font-family: Helvetica, sans-serif;
+	width: 75%;
+}
+p1{
+	font-family: Helvetica, sans-serif;
+	font-size: 15px;
+}
+header{
+	width: 100%;
+	padding:10px;
+	text-align: center;
+	background: black;
+	color: white;
+}
+menu{
+	font-family: Helvetica, sans-serif;
+    font-size: 20px;
+    width: 90%;
+    padding:20px;
+    text-align: center;
+    background: gold;
+    color: black;
+}
+footer{
+	position: relative;
+	bottom: 0;
+	color: white;
+    padding: 10px;
+    width: 100%; 
+    background: black;
+}
+ul {
+   list-style-type: none;
+   font-family: Helvetica, sans-serif;
+   text-align: center;
+}
+table, th, td {
+	padding: 10px;
+	text-align: center;
+	border: 1px solid black;
+}
+table.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.padding1{
+	padding: 25px;
+}
+
+.link{
+	color: gold;
+}
+a.ex2:hover, a.ex2:active{
+	font-size: 150%;
+	color: black; 
+}

@@ -1,0 +1,160 @@
+<style>
+  .form-container {
+    display: flex;
+    max-width: 800px;
+    margin: auto;
+  }
+
+  .form-column {
+    flex: 1;
+    padding: 10px;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+  }
+
+  .citation-column {
+    flex: 1;
+    padding: 25px;
+    margin-top: 70px;
+  }
+
+  textarea {
+    height: 150px;
+  }
+
+  .button-column {
+    flex-shrink: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  button {
+    background-color: gold;
+    color: rgb(0, 0, 0);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  .subContainer {
+    display: flex;
+    flex-direction: column;
+  }
+</style>
+
+<head>
+   <title> DESRIST DB | Database </title>
+ </head>
+ 
+ <body>
+   
+   <header>
+  <div style="text-align: center;"> <a href="https://ccse.kennesaw.edu/it/"> <img src="/assets/ksu logo.jpg" style="width: 600px;"> </a> </div>
+  <div style="text-align: center;"><h1> Design Science Research in Information Systems and Technology </h1></div>
+   </header>
+   
+   <div style="text-align: center;"></div>
+     <br>
+     <br>
+     <br>
+ </body>
+ 
+
+<!-- Add a variable to check if any input field has a value -->
+<main class="main">
+  <div class="form-container">
+    <div class="subContainer">
+      <div>
+        <h2>Search Form</h2>
+      </div>
+
+      <div class="form-column">
+        <div class="form-group">
+          <label for="authors">Authors:</label>
+          <input
+            type="text"
+            id="authors"
+            [(ngModel)]="authors"
+            placeholder="Enter authors"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="year">Year:</label>
+          <input
+            type="text"
+            id="year"
+            [(ngModel)]="year"
+            placeholder="Enter year"
+            pattern="[0-9]*"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="title">Title:</label>
+          <input
+            type="text"
+            id="title"
+            [(ngModel)]="title"
+            placeholder="Enter title"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="publication">Publication:</label>
+          <input
+            type="text"
+            id="publication"
+            [(ngModel)]="publication"
+            placeholder="Enter publication"
+          />
+        </div>
+      </div>
+
+      <div class="button-column">
+        <!-- Bind the disabled attribute based on the condition -->
+        <button (click)="search()" [disabled]="!hasValue()">Search</button>
+        <button (click)="reset()">Reset</button>
+      </div>
+    </div>
+
+    <div class="citation-column">
+      <label for="citation">Citation:</label>
+      <textarea id="citation" readonly>{{ citation }}</textarea>
+    </div>
+  </div>
+</main>
+
+<footer> <div style="text-align: center;">
+  Kennesaw Campus
+<br>1000 Chastain Road
+<br>Kennesaw, GA 30144
+<br>Phone: 470-578-6000
+<br>
+<br>Marietta Campus
+<br>100 South Marietta Pkwy
+<br>Marietta, GA 30060
+<br>Phone: 470-578-6000
+<br>
+</div>
+</footer>
